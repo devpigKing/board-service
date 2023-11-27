@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      .container {
+        max-width: 560px;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2>게시글 상세</h2>
+      </div>
+
+      <div>
+        <label for="articleId">게시글 ID</label>
+        <input type="text" id="articleId" name="articleId" class="form-control" value="1" readonly>
+      </div>
+
+      <div>
+        <label for="title">제목</label>
+        <input type="text" id="title" name="title" class="form-control" value="테스트 글1" readonly>
+      </div>
+
+      <div>
+        <label for="content">글 내용</label>
+        <input type="text" id="content" name="content" class="form-control" value="테스트 글1 내용입니다." readonly>
+      </div>
+
+      <hr class="my-4">
+
+      <div class="row">
+        <div class="col">
+          <button class="w-100 btn btn-primary btn-lg"
+                  onclick="location.href='editForm.html'" type="button">게시글 수정</button>
+        </div>
+
+        <div class="col">
+          <button class="w-100 btn btn-secondary btn-lg"
+                  onclick="location.href='articles.html'" type="button">목록으로</button>
+        </div>
+      </div>
+
+    </div> <!-- /container -->
+
+</body>
+</html>
